@@ -1,5 +1,6 @@
 import React from 'react';
 import treatment from '../../assets/images/treatment.png';
+import PrimaryButton from '../Shared/PrimaryButton';
 
 const BannerBottom = () => {
     return (
@@ -18,7 +19,7 @@ const BannerBottom = () => {
               here', making it look like readable English. Many desktop
               publishing packages and web page
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <PrimaryButton>GET STARTED</PrimaryButton>
           </div>
         </div>
       </div>
