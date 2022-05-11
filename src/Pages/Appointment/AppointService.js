@@ -16,12 +16,12 @@ const AppointService = ({ singleService, setTreatment }) => {
         <p>
           {slots.length} {slots.length > 1 ? "spaces" : "space"} available
         </p>
-        <div className="card-actions justify-center">          
+        <div className="card-actions justify-center">
           <label
             onClick={() => setTreatment(singleService)}
             disabled={slots.length === 0}
-            for="booking-modal"
-            class="btn btn-secondary text-white"
+            htmlFor="booking-modal"
+            className="btn btn-secondary text-white"
           >
             Book Appointment
           </label>
