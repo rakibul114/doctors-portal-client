@@ -17,7 +17,7 @@ const BookingModal = ({ treatment, setTreatment, date, refetch }) => {
     const booking = {
       treatmentId: _id,
       treatment: name,
-      data: formatDate,
+      date: formatDate,
       slot,
       patient: user.email,
       patientName: user.displayName,
@@ -38,7 +38,7 @@ const BookingModal = ({ treatment, setTreatment, date, refetch }) => {
           toast(`Appointment is set, ${ formatDate } at ${ slot }`);
         }
         else {
-          toast.error(`Already have an appointment on ${data.booking?.data} at ${data.booking?.slot}`);
+          toast.error(`Already have an appointment on ${data.booking?.date} at ${data.booking?.slot}`);
         }
         refetch();
         // to close the modal
