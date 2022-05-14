@@ -12,8 +12,8 @@ const Review = ({review}) => {
           </p>
         </div>
         <div className='flex items-center p-5 gap-5'>
-          <div class="avatar">
-            <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="avatar">
+            <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img src={review.img} alt='' />
             </div>
                 </div>
